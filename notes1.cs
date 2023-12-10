@@ -21,8 +21,6 @@ namespace Console_Dersleri
             }
 
             // Ekleme İşlemi
-
-            /*
             conn.Open();
             SqlCommand command2 = new SqlCommand("insert into Person (Name, City) values (@p1, @p2)", conn);
             command2.Parameters.AddWithValue("@p1", "Esile Altay");
@@ -30,22 +28,19 @@ namespace Console_Dersleri
             command2.ExecuteNonQuery();
             conn.Close();
             Listele();
-             */
+
 
             // Silme İşlemi
 
-            /*
             conn.Open();
             SqlCommand command3 = new SqlCommand("Delete From Person where Id=@p1",conn);
             command3.Parameters.AddWithValue("@p1", 11);
             command3.ExecuteNonQuery();
             conn.Close();
             Listele();
-            */
 
             //Güncelleme İşlemi
 
-            /*
             conn.Open();
             SqlCommand command4 = new SqlCommand("Update Person Set Name= @p1, City= @p2 where Id=@p3", conn);
             command4.Parameters.AddWithValue("@p1", "Ayşe Zencir");
@@ -54,11 +49,9 @@ namespace Console_Dersleri
             command4.ExecuteNonQuery();
             conn.Close();
             Listele();
-            */
 
             //Dışarıdan Girilen Parametre ile Ekleme
 
-            /*
             String name, city;
             Console.WriteLine("************************");
             Console.Write("Kişi Adı: ");
@@ -75,7 +68,6 @@ namespace Console_Dersleri
             command5.ExecuteNonQuery();
             conn.Close();  
             Listele();
-            */
 
             Console.ReadLine();
         }
